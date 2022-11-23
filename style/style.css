@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 *:focus{
     outline: none;
 }
@@ -20,30 +21,36 @@ body{
     align-items: center;
 }
 
+.search{
+    display: flex;
+    justify-content: end;
+}
+
 .input{
     height: 50px;
-    width: 220px;
+    width: 0px;
     font-size: 20px;
     padding-left: 15px;
+    padding-right: -15px;
     border-style: none;
-    background-color: white;
-    display: none;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
+    transform: translateX(16px);
 }
-.inputDisplayBlock{
-    display: block;
+
+.inputHidden{
+    width: 200px;
+    padding-right: 40px;
 }
+
 .btn{
     height: 50px;
     width: 50px;
     border-style: none;
     background-color: white;
+    z-index: +1;
 }
 
-/* .btnMovement{
-    position: absolute;
-    background-color: white;
-    transform: translateX(234px);
-} */
 .btn>i{
     font-size: 25px;
 }

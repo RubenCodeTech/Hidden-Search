@@ -4,5 +4,5 @@ console.log(input)
 btn.addEventListener('click', btnSearchHidden);
 function btnSearchHidden(){
     console.log('hola');
-    input.classList.toggle("inputDisplayBlock")
+    input.classList.toggle("inputHidden")
 }
